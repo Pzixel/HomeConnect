@@ -28,13 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.eventLog = new System.Diagnostics.EventLog();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog)).BeginInit();
             // 
             // HomeConnectService
             // 
             this.ServiceName = "Home Connect Service";
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog)).EndInit();
 
         }
 
         #endregion
+
+        private System.Diagnostics.EventLog eventLog;
     }
 }
